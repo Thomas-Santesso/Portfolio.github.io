@@ -165,7 +165,6 @@ section.animate {
     }
     
     header img {
-        position: relative;
         display: flex;
         justify-content: center;
         height: 40px; /* Reduz tamanho do logo em telas pequenas */
