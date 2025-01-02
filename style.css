@@ -167,7 +167,7 @@ section.animate {
     header img {
         display: flex;
         justify-content: center;
-        top: -20px;
+        top: 20px;
         height: 40px; /* Reduz tamanho do logo em telas pequenas */
     }
     header nav ul li a {
