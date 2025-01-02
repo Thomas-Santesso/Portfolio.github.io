@@ -125,21 +125,55 @@ section.animate {
 
 /* Estilo responsivo */
 @media (max-width: 768px) {
-    header img {
-        height: 40px;
-        top: 10px;
-        left: 10px;
-    }
-
-    nav ul {
+    header {
         flex-direction: column;
+        align-items: center;
+        padding: 10px;
     }
 
-    nav ul li {
-        margin: 10px 0;
+    header img {
+        height: 40px; /* Reduz tamanho do logo em telas pequenas */
     }
 
-    section {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    .container {
+        padding: 15px;
         margin: 10px;
+    }
+
+    section h1, section h2 {
+        font-size: 20px;
+    }
+
+    #contato form {
+        width: 100%; /* Ajusta a largura do formulário */
+        max-width: 100%; /* Remove limitação em dispositivos pequenos */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px; /* Ajusta tamanho geral da fonte */
+    }
+
+    header nav ul li a {
+        font-size: 16px;
+    }
+
+    section h1, section h2 {
+        font-size: 18px;
+    }
+
+    #contato form button {
+        font-size: 14px; /* Ajusta tamanho do botão */
+        padding: 8px 15px;
     }
 }
