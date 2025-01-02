@@ -166,7 +166,8 @@ section.animate {
     
     header img {
         position: relative;
-        height: 20px; /* Reduz tamanho do logo em telas pequenas */
+        margin: auto;
+        height: 40px; /* Reduz tamanho do logo em telas pequenas */
     }
     header nav ul li a {
         font-size: 16px;
