@@ -1,87 +1,82 @@
-/* Aplicando a fonte importada */
+/* Corpo com fundo gradiente */
 body {
-    font-family: 'Poppins', sans-serif; /* Alternativa semelhante */
+    font-family: 'Poppins', sans-serif; /* Use 'Futura' se disponível */
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    background: linear-gradient(to bottom, #1f1f1f, #0d1b2a); /* Gradiente escuro */
+    color: #ffffff; /* Texto claro */
 }
 
-/* Estilo para H1 e H2 */
-h1, h2 {
-    font-family: 'Poppins', sans-serif; /* Mantém a mesma fonte para uniformidade */
-    font-weight: bold;
-}
+/* Cabeçalho */
 header {
-    background: #333;
-    color: #fff;
+    background: #1a1e21; /* Azul escuro profundo */
+    color: #ffffff;
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 0;
+    position: relative;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); /* Sombra para destaque */
 }
 
-.header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/* Logo */
+header img {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 90px; /* Ajuste do tamanho */
 }
 
-.header-content .logo img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
+/* Título do cabeçalho */
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: bold;
+    color: #ffffff;
 }
 
+/* Links de navegação */
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 20px 0 0 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    display: flex;
-    align-items: center;
+    transition: color 0.3s ease;
 }
 
-nav ul li a i {
-    margin-right: 5px;
+nav ul li a:hover {
+    color: #00aaff; /* Azul vibrante */
 }
 
+/* Seções */
 section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: rgba(13, 27, 42, 0.9); /* Fundo translúcido */
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra mais sutil */
+    border-left: 5px solid #00aaff; /* Borda azul vibrante */
+    border-radius: 8px; /* Borda arredondada */
 }
 
+/* Títulos das seções */
 section h2 {
-    border-bottom: 2px solid #333;
+    color: #00aaff; /* Azul vibrante */
+    border-bottom: 2px solid #ffffff;
     padding-bottom: 10px;
     margin-bottom: 20px;
-    display: flex;
-    align-items: center;
 }
 
-.projeto {
-    margin-bottom: 20px;
-}
-
-.projeto img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
 
 .whatsapp-button {
     display: inline-flex;
@@ -107,6 +102,16 @@ section h2 {
     background-color: #1da851;
 }
 
+/* Imagens de projeto */
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: 3px solid #00aaff; /* Bordas com azul vibrante */
+}
+
+/* Animação ao aparecer */
 section {
     opacity: 0;
     transform: translateY(50px);
@@ -118,9 +123,12 @@ section.animate {
     transform: translateY(0);
 }
 
+/* Estilo responsivo */
 @media (max-width: 768px) {
-    .header-content {
-        text-align: center;
+    header img {
+        height: 40px;
+        top: 10px;
+        left: 10px;
     }
 
     nav ul {
@@ -131,8 +139,7 @@ section.animate {
         margin: 10px 0;
     }
 
-    .projeto img {
-        width: 100%;
-        height: auto;
+    section {
+        margin: 10px;
     }
 }
