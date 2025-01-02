@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Engenheiro</title>
+    <title>Portfólio Pessoal</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -11,9 +11,10 @@
     <header>
         <div class="header-content">
             <div class="logo">
-                <img src="logo.png" alt="Logo do Engenheiro">
+                <img src="logo.png" alt="Logo">
             </div>
-            <h1>Portfólio de [Seu Nome]</h1>
+            <h1>Vinicius de M. Oliveira Engenharia</h1>
+
             <nav>
                 <ul>
                     <li><a href="#sobre"><i class="fas fa-user"></i> Sobre Mim</a></li>
@@ -32,15 +33,15 @@
 
     <section id="projetos">
         <h2>Projetos</h2>
+        <h3>Projeto 1</h3>
+        <p>Descrição do projeto 1.</p>
         <div class="projeto">
             <img src="projeto1.jpg" alt="Projeto 1">
-            <h3>Projeto 1</h3>
-            <p>Descrição do projeto 1.</p>
         </div>
+        <h3>Projeto 2</h3>
+        <p>Descrição do projeto 2</p>
         <div class="projeto">
-            <img src="projeto2.jpg" alt="Projeto 2">
-            <h3>Projeto 2</h3>
-            <p>Descrição do projeto 2.</p>
+            <img src="projeto2.jpg" alt="Projeto 1">
         </div>
     </section>
 
@@ -55,18 +56,12 @@
 
     <section id="contato">
         <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
+        <p>Entre em contato comigo pelo WhatsApp clicando no botão abaixo:</p>
+        <a href="https://wa.me/SEU_NUMERO?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20projetos!" 
+           target="_blank" 
+           class="whatsapp-button">
+            <i class="fab fa-whatsapp"></i> Enviar mensagem no WhatsApp
+        </a>
     </section>
 
     <script src="script.js"></script>
