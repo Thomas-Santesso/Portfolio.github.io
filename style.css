@@ -164,7 +164,7 @@ section.animate {
         font-size: 14px; /* Ajusta tamanho geral da fonte */
     }
     header img {
-        height: 20px; /* Reduz tamanho do logo em telas pequenas */
+        height: 0px; /* Reduz tamanho do logo em telas pequenas */
     }
     header nav ul li a {
         font-size: 16px;
