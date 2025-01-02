@@ -19,7 +19,7 @@ header {
 
 /* Logo */
 header img {
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 30px;
     height: 90px; /* Ajuste do tamanho */
@@ -163,7 +163,9 @@ section.animate {
     body {
         font-size: 14px; /* Ajusta tamanho geral da fonte */
     }
-
+    header img {
+        height: 20px; /* Reduz tamanho do logo em telas pequenas */
+    }
     header nav ul li a {
         font-size: 16px;
     }
