@@ -1,11 +1,17 @@
+/* Aplicando a fonte importada */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* Alternativa semelhante */
     margin: 0;
     padding: 0;
     background: #f4f4f4;
     color: #333;
 }
 
+/* Estilo para H1 e H2 */
+h1, h2 {
+    font-family: 'Poppins', sans-serif; /* Mantém a mesma fonte para uniformidade */
+    font-weight: bold;
+}
 header {
     background: #333;
     color: #fff;
